@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <title>Alpine Js Tutorial</title>
+</head>
+<body>
+    
+
+   <div x-data = "{ isOpen : true}">
+       <button @click=" isOpen = !isOpen">Click Me</button>
+       <button x-on:click=" isOpen = !isOpen">Toggle</button>
+       <h1 x-show = "isOpen">Hide Me</h1>
+   </div>
+</body>
+</html>
