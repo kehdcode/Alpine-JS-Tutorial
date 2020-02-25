@@ -7,12 +7,9 @@
     <title>Alpine Js Tutorial</title>
 </head>
 <body>
-    
-
-   <div x-data = "{ isOpen : true}">
-       <button @click=" isOpen = !isOpen">Click Me</button>
-       <button x-on:click=" isOpen = !isOpen">Toggle</button>
-       <h1 x-show = "isOpen">Hide Me</h1>
-   </div>
+    <div x-data= "{ isOpen: false} ">
+        <button @click= "isOpen = !isOpen">Toggle Me</button>
+        <p x-show="isOpen">This is just the beginning of a good thing</p>
+    </div>
 </body>
 </html>
